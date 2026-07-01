@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StyleCart — All-Day Comfort, Elegant Design</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="logo">StyleCart</a>
+
+    <nav class="nav-links nav-links-left" id="navLinksLeft">
+      <a href="#">Everything</a>
+      <a href="#">Women</a>
+      <a href="#">Men</a>
+      <a href="#">Accessories</a>
+    </nav>
+
+    <div class="nav-right">
+      <nav class="nav-links nav-links-right">
+        <a href="#about">About</a>
+        <a href="#footer">Contact Us</a>
+      </nav>
+      <button class="icon-btn cart-btn" id="cartBtn" aria-label="Cart">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="9" cy="21" r="1.4"/><circle cx="18" cy="21" r="1.4"/><path d="M2.5 3h2l2.2 12.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L21 7H6"/></svg>
+        <span class="cart-price" id="cartPrice">$0.00</span>
+      </button>
+      <button class="icon-btn" aria-label="Account">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="8" r="3.6"/><path d="M4.5 20c1.6-4 5-5.6 7.5-5.6s5.9 1.6 7.5 5.6"/></svg>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#">Everything</a>
+    <a href="#">Women</a>
+    <a href="#">Men</a>
+    <a href="#">Accessories</a>
+    <a href="#about">About</a>
+    <a href="#footer">Contact Us</a>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-gradient"></div>
+
+  <div class="hero-content">
+    <h1 class="hero-heading">All-Day Comfort<br>Dress with Elegant<br>Design</h1>
+    <p class="hero-sub">Thoughtfully tailored everyday wear, cut from breathable fabric and finished with quiet, confident detail.</p>
+    <div class="hero-btns">
+      <a href="#products" class="btn btn-primary">Shop Now</a>
+      <a href="#about" class="btn btn-ghost">Find More</a>
+    </div>
+  </div>
+
+  <img class="hero-model" src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=80" alt="Model wearing elegant outfit holding shopping bags">
+
+  <!-- floating cards -->
+  <div class="float-card float-left-1">
+    <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=200&q=80" alt="Linen shirt">
+    <div>
+      <p class="fc-name">Linen Shirt</p>
+      <p class="fc-price">$48.00</p>
+    </div>
+  </div>
+  <div class="float-card float-left-2">
+    <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=200&q=80" alt="Denim jacket">
+    <div>
+      <p class="fc-name">Denim Jacket</p>
+      <p class="fc-price">$76.00</p>
+    </div>
+  </div>
+  <div class="float-card float-right-1">
+    <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=200&q=80" alt="Knit sweater">
+    <div>
+      <p class="fc-name">Knit Sweater</p>
+      <p class="fc-price">$54.00</p>
+    </div>
+  </div>
+  <div class="float-card float-right-2">
+    <img src="https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=200&q=80" alt="Summer dress">
+    <div>
+      <p class="fc-name">Summer Dress</p>
+      <p class="fc-price">$62.00</p>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-cue" aria-label="Scroll down"></a>
+</section>
+
+<!-- ===== ABOUT / INTRO ===== -->
+<section class="about" id="about">
+  <div class="about-inner">
+    <div class="about-img">
+      <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=900&q=80" alt="Lifestyle fashion photo">
+    </div>
+    <div class="about-content">
+      <span class="eyebrow">Our Promise</span>
+      <h2>Comfortable, Chic, and Season-Ready</h2>
+      <p>Every StyleCart piece begins with fabric first — soft, breathable cottons and fluid blends chosen for how they move with you, not just how they photograph. We design in small, considered drops rather than constant noise, so each garment earns its place in your wardrobe across seasons, not just one scroll.</p>
+      <p>From tailored silhouettes to relaxed everyday staples, our collections are built to layer effortlessly, hold their shape wash after wash, and feel as good at 8am as they do at 8pm.</p>
+      <a href="#products" class="btn btn-outline">Explore Collection</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FEATURED PRODUCTS ===== -->
+<section class="products" id="products">
+  <div class="section-heading">
+    <h2>Featured Products</h2>
+    <span class="underline"></span>
+  </div>
+
+  <div class="product-grid" id="productGrid">
+    <!-- cards injected by JS -->
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer id="footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#">My Account</a>
+      <a href="#">Cart</a>
+      <a href="#footer">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>For Her</h4>
+      <a href="#">Women Jeans</a>
+      <a href="#">Tops and Shirts</a>
+      <a href="#">Women Jackets</a>
+      <a href="#">Heels and Flats</a>
+      <a href="#">Accessories</a>
+    </div>
+    <div class="footer-col">
+      <h4>For Him</h4>
+      <a href="#">Men Jeans</a>
+      <a href="#">Men Shirts</a>
+      <a href="#">Men Shoes</a>
+      <a href="#">Men Accessories</a>
+      <a href="#">Men Jackets</a>
+    </div>
+    <div class="footer-col footer-app">
+      <h4>Get the App</h4>
+      <p>Shop StyleCart on the go and get early access to new drops.</p>
+      <a href="#" class="play-btn">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M3 2.5c-.3.3-.5.7-.5 1.2v16.6c0 .5.2.9.5 1.2l.1.1L12.6 12 3.1 2.4l-.1.1z"/><path d="M15.8 14.9 12.6 12l3.2-2.9 3.8 2.2c.7.4.7 1.4 0 1.8z" opacity=".7"/><path d="M3.1 21.6 12.6 12l3.2 2.9-11.6 6.8c-.4.2-.8.1-1.1-.1z" opacity=".85"/><path d="M3.1 2.4 15.8 9.1l-3.2 2.9z" opacity=".55"/></svg>
+        <span>Get it on<br><strong>Google Play</strong></span>
+      </a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 StyleCart. All rights reserved.</p>
+    <p>Powered by StyleCart</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
